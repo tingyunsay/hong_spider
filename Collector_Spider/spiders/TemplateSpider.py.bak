@@ -59,7 +59,7 @@ def get_HeadUrl(index_url,flag):
 	
 
 class CollectorSpider(scrapy.Spider):
-	name ='huizhou'
+	name ='xian_gonggongjiaotong'
 	allowed_domain = []
 		
 	def __init__(self,*args,**kwargs):

@@ -13,13 +13,13 @@ BOT_NAME = 'Collector_Spider'
 
 SPIDER_MODULES = ['Collector_Spider.spiders']
 NEWSPIDER_MODULE = 'Collector_Spider.spiders'
-DOWNLOAD_DELAY = 0.4
+DOWNLOAD_DELAY = 0.5
 
 ITEM_PIPELINES = {
     #'Collector_Spider.pipelines.SomePipeline': 300,
-    #'Collector_Spider.pipelines.Collector_SpiderPipeline':400,
+    'Collector_Spider.pipelines.Collector_SpiderPipeline':400,
     'Collector_Spider.pipelines.FilterPipeline':200,
-    'Collector_Spider.pipelines.SQLPipeline':300,
+    #'Collector_Spider.pipelines.SQLPipeline':300,
 }
 
 DOWNLOADER_MIDDLEWARES = {
@@ -41,7 +41,7 @@ DOWNLOAD_HANDLERS = {
 
 COOKIES_ENABLED=False
 
-CLOSESPIDER_TIMEOUT=300
+CLOSESPIDER_TIMEOUT=900
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'Collector_Spider (+http://www.yourdomain.com)'

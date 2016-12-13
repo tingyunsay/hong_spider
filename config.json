@@ -20,10 +20,10 @@
 				"Lost_Describe":"tr[6]/td[2]/text()",
 				"Lost_Person":"tr[2]/td[2]/text()",
 				"Lost_Time":"tr[4]/td[2]/text()",
-				"Lost_Location":"tr[1]/td[2]/text()"
+				"Lost_Location":["tr[1]/td[2]/text()","西安公共交通总公司  "]
 			}
 		}],
-	"chongqing":[{
+	"lost_chongqing":[{
                         "Index_Url":"http://hotnet.cqnews.net/swzl2/index_i.aspx?__EVENTTARGET=AspNetPager1&__EVENTARGUMENT=1",
                         "Max_Page":{
 				"soup":"div[id=\"AspNetPager1\"] > a:nth-of-type(9)",
@@ -37,19 +37,19 @@
                 {
 			"Valid_Url":{
                         	"Post_Url":["//div[@class=\"swzl_nr_wz float_left\"]/a/@href"],
-				"Extra_Url":{}
+							"Extra_Url":{}
 				}
                 },
                 {
                         "Three_Xpath":{
-				"Lost_Url":"",
+								"Lost_Url":"",
                                 "Lost_From":".+//.+?/",
                                 "Lost_Id":"",
                                 "Lost_Title":"//tr[2]/td[2]/span/text()",
                                 "Lost_Describe":"//tr[7]/td[2]/span/text()",
                                 "Lost_Person":"//tr[5]/td[2]/span/text()",
                                 "Lost_Time":"//tr[3]/td[2]/span/text()",
-                                "Lost_Location":"//tr[4]/td[2]/span/text()"
+                                "Lost_Location":["//tr[4]/td[2]/span/text()","重庆失物招领平台,交巡警总队  "]
                 		}
 		}],
 	"shanghai_shiwuzhaoling":[{
@@ -72,17 +72,17 @@
                         },
                         {
                                 "Three_Xpath":{
-					"Lost_Url":"",
+									"Lost_Url":"",
                                 	"Lost_From":".+//.+?/",
                                 	"Lost_Id":"//tr[2]/td[2]/div/text()",
                                 	"Lost_Title":"//tr[4]/td[2]/div/text()",
-                                	"Lost_Describe":"//tr[11]/td[2]/div/text()",
+                                	"Lost_Describe":"//tr[4]/td[2]/div/text()",
                                 	"Lost_Person":"//tr[7]/td[2]/div/text()",
                                 	"Lost_Time":"//tr[5]/td[2]/div/text()",
-                                	"Lost_Location":"//tr[6]/td[2]/div/text()"
+                                	"Lost_Location":["//tr[6]/td[2]/div/text()","上海失物招领平台  "]
 					}
                         }],
-	"nanning":[{
+	"not_nanning":[{
                         "Index_Url":"http://www.nngaj.gov.cn/SERVICE/SWZLList.aspx?page=1",
                         "Max_Page":{
 				"soup":"input:nth-of-type(11)",
@@ -105,7 +105,7 @@
                                 "Lost_Describe":"//tr[6]/td[2]/text()",
                                 "Lost_Person":"//tr[4]/td[2]/text()",
                                 "Lost_Time":"//tr[2]/td[2]/text()",
-                                "Lost_Location":"//tr[3]/td[2]/text()"
+                                "Lost_Location":["//tr[3]/td[2]/text()","南宁市公安局  "]
 				}
                 }],
 	"nanjing":[{
@@ -127,14 +127,14 @@
 				"Lost_Url":"",
                                 "Lost_From":".+//.+?/",
                                 "Lost_Id":"",
-                                "Lost_Title":"//table[1]/tr[1]/td[4]/text()",
-                                "Lost_Describe":"//table[1]/tr[2]/td[2]/text()",
+                                "Lost_Title":"//table[1]/tr[1]/td[2]/text()",
+                                "Lost_Describe":"//table[1]/tr[1]/td[4]/text()",
                                 "Lost_Person":"//table[1]/tr[4]/td[2]/text()",
                                 "Lost_Time":"//table[1]/tr[3]/td[2]/text()",
-                                "Lost_Location":"//table[1]/tr[3]/td[4]/text()"
+                                "Lost_Location":["//table[1]/tr[3]/td[4]/text()","南京市公安局  "]
 				}
 		}],
-	"changzhou":[{
+	"not_changzhou":[{
 			"Index_Url":"http://www.czsga.gov.cn/html/Swzlgg/index_2.html",
                         "Max_Page":{
 				"soup":"div > a:nth-of-type(14)",
@@ -157,7 +157,7 @@
                                 "Lost_Describe":"//td[@class=\"NewsContent\"]/p[1]/span/font/text()",
                                 "Lost_Person":"//td[@class=\"NewsContent\"]/p[2]/span/font/text()",
                                 "Lost_Time":"//td[@class=\"NewsTitle\"]/text()",
-                                "Lost_Location":"//td[@class=\"NewsContent\"]/p[1]/span/font/text()"
+                                "Lost_Location":["//td[@class=\"NewsContent\"]/p[1]/span/font/text()","江苏省常州市  "]
 				}
 		}],
 	"taizhou":[{
@@ -184,13 +184,13 @@
                                 "Lost_From":".+//.+?/",
                                 "Lost_Id":"",
                                 "Lost_Title":"//div[@id=\"s3447440_content\"]/table//tr[2]/td[2]/text()",
-                                "Lost_Describe":"//div[@id=\"s3447440_content\"]/table//tr[5]/td[2]/text()",
+                                "Lost_Describe":"//div[@id=\"s3447440_content\"]/table//tr[2]/td[2]/text()",
                                 "Lost_Person":"//div[@id=\"s3447440_content\"]/table//tr[3]/td[2]/text()",
                                 "Lost_Time":"//div[@id=\"s3447440_content\"]/table//tr[2]/td[4]/text()",
-                                "Lost_Location":"//div[@id=\"s3447440_content\"]/table//tr[3]/td[4]/text()"
+                                "Lost_Location":["//div[@id=\"s3447440_content\"]/table//tr[3]/td[4]/text()","江苏省泰州市公安局  "]
 				}
                 }],
-	"tianjing":[{
+	"lost_tianjing":[{
 			"Index_Url":"http://www.tjgaj.gov.cn/site/search/searchsw.aspx?page=1",
 			"Max_Page":{
 				"soup":"#defaultmain_AspNetPager1 > a:nth-of-type(14)",
@@ -208,14 +208,14 @@
                                 "Lost_Describe":"td[4]/text()",
                                 "Lost_Person":"td[1]/text()",
                                 "Lost_Time":"td[5]/text()",
-                                "Lost_Location":"td[3]/text()"
+                                "Lost_Location":["td[3]/text()","天津市公安局  "]
 				}
 		}],
 	"shenzhen_airport":[{
 			"Index_Url":"http://www.szairport.com/frontapp/SwzlServlet?act=swzllist&start=0&limit=12",
 			"Max_Page":{
 				"soup":".fydh > tr > td > table > tr > td:nth-of-type(1)",
-				"re":"(?<=u8ba1)\\d+"
+				"re":"\\d+"
 				},
 			"Final_Url":"(?<=limit=)\\d+",
 			"One_Xpath":{
@@ -224,10 +224,10 @@
                                 "Lost_From":".+//.+?/",
                                 "Lost_Id":"td[1]/text()",
                                 "Lost_Title":"td[3]/text()",
-                                "Lost_Describe":"td[4]/text()",
+                                "Lost_Describe":"td[3]/text()",
                                 "Lost_Person":"",
                                 "Lost_Time":"td[2]/text()",
-                                "Lost_Location":"td[5]/text()"
+                                "Lost_Location":["td[5]/text()","深圳机场  "]
 				}
 		}],
 	"chongqing_jiaotong":[{
@@ -240,10 +240,10 @@
 				"Lost_From":".+//.+?/",
                                	"Lost_Id":"",
                                 "Lost_Title":"h3/span[@class=\"carNum\"]/text()",
-                                "Lost_Describe":"div[@class=\"con\"]/text()",
+                                "Lost_Describe":"div[@class=\"con\"]//text()",
                                 "Lost_Person":"",
                                 "Lost_Time":"h3/span[@class=\"time\"]/text()",
-				"Lost_Location":"h3/span[@class=\"carNum\"]/text()"
+				"Lost_Location":["h3/span[@class=\"carNum\"]/text()","重庆交通出行网  "]
 			}
 		}],
 	"qingdao_jiaotong":[{
@@ -267,7 +267,7 @@
                                 "Lost_Describe":"td[1]/text()",
                                 "Lost_Person":"td[4]/text()",
 				"Lost_Time":"td[3]/text()",
-				"Lost_Location":"td[2]/text()"
+				"Lost_Location":["td[2]/text()","青岛公交集团  "]
 				}
 			}			
 		],
@@ -284,7 +284,7 @@
                                 "Lost_Describe":"div[@class=\"swzlimg\"]/p/text()",
                                 "Lost_Person":"",
                                 "Lost_Time":"span[3]/text()",
-                                "Lost_Location":"span[1]/text()"
+                                "Lost_Location":["span[1]/text()","北京地铁  "]
                         }			
 		}],
 	"dazhou_shiwuzhaoling":[{
@@ -297,10 +297,10 @@
 				"Lost_From":".+//.+?/",
                                 "Lost_Id":"",
                                 "Lost_Title":"tr[2]/td/a/text()",
-				"Lost_Describe":"tr[3]/td/text()",
+				"Lost_Describe":"tr[2]/td/a/text()",
                                 "Lost_Person":"",
                                 "Lost_Time":"tr[1]/td/text()",
-                                "Lost_Location":""
+                                "Lost_Location":["","四川省达州日报社  "]
                         }
 		}],
 	"meilang_airport":[{
@@ -324,13 +324,13 @@
                                 "Lost_From":".+//.+?/",
                                 "Lost_Id":"td[2]/text()",
                                 "Lost_Title":"td[3]/text()",
-                                "Lost_Describe":"tr[3]/td/text()",
+                                "Lost_Describe":"td[3]/text()",
                                 "Lost_Person":"",
                                 "Lost_Time":"td[4]/text()",
-                                "Lost_Location":"td[6]/text()"
+                                "Lost_Location":["td[6]/text()","海口美兰国际机场  "]
                                 }			
 		}],
-	"chengdu_taix":[{
+	"not_chengdu_taix":[{
 			"Index_Url":"http://www.cdtaxi.cn/zhaolingxx/index_1.html",
                         "Max_Page":{
                                 "soup":"ul[class=\"r\"] > li:nth-of-type(14) > a",
@@ -353,10 +353,10 @@
                                 "Lost_Describe":"//div[@class=\"newsshow\"]/p/text()",
                                 "Lost_Person":"",
                                 "Lost_Time":"//div[@class=\"newsshow-title\"]/span/text()",
-                                "Lost_Location":""
+                                "Lost_Location":["","成都出租车网  "]
                                 }
 		}],
-	"huizhou":[{
+	"lost_huizhou":[{
 			"Index_Url":"http://110.xizi.com/index.php?m=pahz&c=shops&a=lost_property&sid=4230&page=1",
 			"Max_Page":{
 				"soup":"#pages > a:nth-of-type(12)",
@@ -379,7 +379,7 @@
                                 "Lost_Describe":"a/text()",
                                 "Lost_Person":"",
                                 "Lost_Time":"span[@class=\"pubdate\"]/text()",
-                                "Lost_Location":""
+                                "Lost_Location":["","广东省惠州市公安局  "]
                                 }			
 			}
 		]

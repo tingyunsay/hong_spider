@@ -13,12 +13,9 @@ class Command(ScrapyCommand):
 	
 	def add_options(self,parser):
 		ScrapyCommand.add_options(self,parser)
-		parser.add_option("-a",dest="spargs",action="append",default=[],metavar="NAME=VALUE",
-				help="set spider argument (may be repeated)")
-		parser.add_option("-o", "--output", metavar="FILE",
-                          	help="dump scraped items into FILE (use - for stdout)")
-        	parser.add_option("-t", "--output-format", metavar="FORMAT",
-                          	help="format to use for dumping items with -o")
+		parser.add_option("-a",dest="spargs",action="append",default=[],metavar="NAME=VALUE",help="set spider argument (may be repeated)")
+		parser.add_option("-o", "--output", metavar="FILE",help="dump scraped items into FILE (use - for stdout)")
+		parser.add_option("-t", "--output-format", metavar="FORMAT",help="format to use for dumping items with -o")
 	
 	def process_options(self,args,opts):
 		ScrapyCommand.process_options(self,args,opts)
@@ -30,6 +27,6 @@ class Command(ScrapyCommand):
 	def run(self,args,opts):
 		spider_loader = self.crawler_process.spider_loader
 		for spidername in args or spider_loader.list():
-			print "________________________crawlall spidername_____________________"+spidername
+			print("________________________crawlall spidername_____________________"+spidername)
 			self.crawler_process.crawl(spidername,**opts.spargs)
 		self.crawler_process.start()
